@@ -1,0 +1,52 @@
+<!--
+  Generated template for the GalleryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar  color="light">
+    <ion-row>
+    <div padding style="height: 7%;width: 15%;">
+    <img menuToggle src="assets/imgs/arrow.svg">
+ </div>
+ <ion-title>Gallery</ion-title>
+</ion-row>
+  </ion-navbar>
+ 
+
+</ion-header>
+
+
+<ion-content >
+<!--    
+    <ion-icon menuToggle name="arrow-back"></ion-icon>
+
+<div class="tit" style="text-align: center">
+  Gallery
+            </div><hr><br> <br> -->
+            <ion-row  style="text-align:right">
+              <!-- <ion-col col-1></ion-col> -->
+                <ion-col col-6 *ngFor="let res of datas" style="text-align:center">
+                    <ion-card style="width: 150px; height: 150px;">
+                        <img style="width: 100%; height: 100%;" [src]=res.image >
+                        <!-- <div class="tittt" style="text-align: center">
+                       {{res.name}}
+                                     </div> -->
+                      </ion-card>
+                </ion-col>
+                <!-- <ion-col col-4>
+                    <ion-card>
+                    <img src="../assets/imgs/par2.jpg"/>
+                    </ion-card>
+                  </ion-col>
+                  <ion-col col-4>
+                      <ion-card>
+                      <img src="../assets/imgs/par1.jpg"/>
+                      </ion-card>
+                    </ion-col> -->
+                  
+              </ion-row>
+</ion-content>
+
